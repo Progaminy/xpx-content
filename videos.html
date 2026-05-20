@@ -6,26 +6,62 @@
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
+    margin:0;
     background:black;
     color:white;
-    font-family:Arial;
-    margin:0;
-    padding:30px;
+    font-family:Arial,sans-serif;
+}
+
+/* Topo fixo */
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#111;
+    border-bottom:1px solid #222;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 20px;
+    z-index:999;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.back-btn{
+    background:#222;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:12px;
+    font-size:16px;
+}
+
+/* Conteúdo */
+.content{
+    padding:100px 20px 40px;
     text-align:center;
 }
 
-h1{
-    margin-top:60px;
+.title{
+    font-size:30px;
+    font-weight:bold;
 }
 
-button{
-    width:100%;
-    padding:18px;
-    margin-top:20px;
-    border:none;
-    border-radius:12px;
-    font-size:18px;
+.subtitle{
+    color:#999;
+    margin-top:12px;
 }
 
 </style>
@@ -33,15 +69,32 @@ button{
 
 <body>
 
-<h1>Assistir vídeos</h1>
+<div class="header">
 
-<p>
-Conteúdo em breve
-</p>
+    <div class="logo">
+        XPX
+    </div>
 
-<button onclick="history.back()">
-Voltar
-</button>
+    <button
+    class="back-btn"
+    onclick="history.back()"
+    >
+        ← Voltar
+    </button>
+
+</div>
+
+<div class="content">
+
+    <div class="title">
+        Assistir vídeos
+    </div>
+
+    <div class="subtitle">
+        Conteúdo em breve
+    </div>
+
+</div>
 
 </body>
 </html>
