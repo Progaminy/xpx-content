@@ -17,6 +17,7 @@ body{
     font-family:Arial,sans-serif;
 }
 
+/* Header */
 .header{
     position:fixed;
     top:0;
@@ -44,22 +45,64 @@ body{
     border:none;
     padding:12px 18px;
     border-radius:12px;
-    font-size:16px;
 }
 
+/* Conteúdo */
 .content{
-    padding:100px 20px 40px;
-    text-align:center;
+    padding:100px 18px 30px;
+}
+
+/* Card */
+.video-card{
+    background:#141414;
+    border-radius:18px;
+    overflow:hidden;
+    margin-bottom:22px;
+    border:1px solid #222;
+}
+
+.thumb{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    background:#222;
+}
+
+.info{
+    padding:18px;
+}
+
+/* Badge novo */
+.badge{
+    display:inline-block;
+    background:#ff3b30;
+    color:white;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
 .title{
-    font-size:30px;
+    font-size:20px;
     font-weight:bold;
 }
 
-.subtitle{
-    color:#999;
-    margin-top:12px;
+.desc{
+    color:#aaa;
+    margin-top:8px;
+    line-height:1.5;
+}
+
+.watch-btn{
+    width:100%;
+    margin-top:18px;
+    border:none;
+    border-radius:12px;
+    padding:16px;
+    background:white;
+    font-size:18px;
 }
 
 </style>
@@ -84,12 +127,68 @@ body{
 
 <div class="content">
 
-    <div class="title">
-        Conteúdo novo
+    <!-- Conteúdo novo 1 -->
+    <div class="video-card">
+
+        <img
+        class="thumb"
+        src="https://picsum.photos/802/400"
+        >
+
+        <div class="info">
+
+            <div class="badge">
+                🔥 NOVO
+            </div>
+
+            <div class="title">
+                Novo Conteúdo XPX
+            </div>
+
+            <div class="desc">
+                Conteúdo recentemente adicionado.
+            </div>
+
+            <button
+            class="watch-btn"
+            onclick="location.href='#'"
+            >
+                Assistir
+            </button>
+
+        </div>
     </div>
 
-    <div class="subtitle">
-        Conteúdo em breve
+    <!-- Conteúdo novo 2 -->
+    <div class="video-card">
+
+        <img
+        class="thumb"
+        src="https://picsum.photos/803/400"
+        >
+
+        <div class="info">
+
+            <div class="badge">
+                🔥 NOVO
+            </div>
+
+            <div class="title">
+                XPX Atualização
+            </div>
+
+            <div class="desc">
+                Acabou de entrar no catálogo.
+            </div>
+
+            <button
+            class="watch-btn"
+            onclick="location.href='#'"
+            >
+                Assistir
+            </button>
+
+        </div>
     </div>
 
 </div>
