@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>XPX</title>
+
+<style>
+
+html, body{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:black;
+    font-family:Arial,sans-serif;
+}
+
+.video-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:
+        rgba(0,0,0,0.45);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.title{
+    font-size:42px;
+    font-weight:bold;
+}
+
+.subtitle{
+    margin-top:12px;
+    font-size:18px;
+    opacity:0.9;
+}
+
+.button{
+    margin-top:35px;
+    background:white;
+    color:black;
+    border:none;
+    padding:18px 40px;
+    border-radius:14px;
+    font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<video
+class="video-bg"
+autoplay
+muted
+loop
+playsinline
+>
+    <source
+    src="COLOCAR_LINK_VIDEO_AQUI"
+    type="video/mp4">
+</video>
+
+<div class="overlay">
+
+    <div class="title">
+        XPX
+    </div>
+
+    <div class="subtitle">
+        Explore conteúdos sem limites
+    </div>
+
+    <button
+    class="button"
+    onclick="location.href='index.html'"
+    >
+        Entrar
+    </button>
+
+</div>
+
+</body>
+</html>
