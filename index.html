@@ -6,25 +6,63 @@
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
-    background:black;
-    color:white;
-    font-family:Arial;
     margin:0;
-    padding:30px;
-}
-
-h1{
-    text-align:center;
-}
-
-button{
-    width:100%;
+    background:#000;
+    color:white;
+    font-family:Arial,sans-serif;
     padding:20px;
-    margin-top:15px;
-    border:none;
-    border-radius:12px;
-    font-size:18px;
+}
+
+.header{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+
+.logo{
+    font-size:42px;
+    font-weight:bold;
+}
+
+.subtitle{
+    color:#999;
+    margin-top:8px;
+}
+
+.card{
+    width:100%;
+    background:#151515;
+    border-radius:18px;
+    padding:22px;
+    margin-bottom:18px;
+    border:1px solid #222;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.card:hover{
+    background:#1d1d1d;
+}
+
+.icon{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.desc{
+    color:#aaa;
+    margin-top:6px;
+    font-size:14px;
 }
 
 </style>
@@ -32,27 +70,82 @@ button{
 
 <body>
 
-<h1>XPX</h1>
+<div class="header">
 
-<button onclick="location.href='videos.html'">
-1. Assistir vídeos
-</button>
+    <div class="logo">
+        XPX
+    </div>
 
-<button onclick="location.href='novo.html'">
-2. Conteúdo novo
-</button>
+    <div class="subtitle">
+        Explore conteúdos
+    </div>
 
-<button onclick="location.href='popular.html'">
-3. Mais popular
-</button>
+</div>
 
-<button onclick="location.href='offline.html'">
-4. Vídeos transferidos offline
-</button>
+<div
+class="card"
+onclick="location.href='videos.html'"
+>
+    <div class="icon">🎬</div>
+    <div class="title">
+        Assistir vídeos
+    </div>
+    <div class="desc">
+        Veja conteúdos disponíveis
+    </div>
+</div>
 
-<button onclick="location.href='baixados.html'">
-5. Vídeos baixados
-</button>
+<div
+class="card"
+onclick="location.href='novo.html'"
+>
+    <div class="icon">🔥</div>
+    <div class="title">
+        Conteúdo novo
+    </div>
+    <div class="desc">
+        Veja novidades recentes
+    </div>
+</div>
+
+<div
+class="card"
+onclick="location.href='popular.html'"
+>
+    <div class="icon">⭐</div>
+    <div class="title">
+        Mais popular
+    </div>
+    <div class="desc">
+        Conteúdos em destaque
+    </div>
+</div>
+
+<div
+class="card"
+onclick="location.href='offline.html'"
+>
+    <div class="icon">📲</div>
+    <div class="title">
+        Transferidos offline
+    </div>
+    <div class="desc">
+        Conteúdo sem internet
+    </div>
+</div>
+
+<div
+class="card"
+onclick="location.href='baixados.html'"
+>
+    <div class="icon">⬇️</div>
+    <div class="title">
+        Vídeos baixados
+    </div>
+    <div class="desc">
+        Seus downloads
+    </div>
+</div>
 
 </body>
 </html>
