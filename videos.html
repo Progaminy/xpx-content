@@ -17,6 +17,7 @@ body{
     font-family:Arial,sans-serif;
 }
 
+/* Header */
 .header{
     position:fixed;
     top:0;
@@ -44,22 +45,52 @@ body{
     border:none;
     padding:12px 18px;
     border-radius:12px;
-    font-size:16px;
 }
 
+/* Conteúdo */
 .content{
-    padding:100px 20px 40px;
-    text-align:center;
+    padding:100px 18px 30px;
+}
+
+/* Card vídeo */
+.video-card{
+    background:#141414;
+    border-radius:18px;
+    overflow:hidden;
+    margin-bottom:22px;
+    border:1px solid #222;
+}
+
+.thumb{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    background:#222;
+}
+
+.info{
+    padding:18px;
 }
 
 .title{
-    font-size:30px;
+    font-size:20px;
     font-weight:bold;
 }
 
-.subtitle{
-    color:#999;
-    margin-top:12px;
+.desc{
+    color:#aaa;
+    margin-top:8px;
+    line-height:1.5;
+}
+
+.watch-btn{
+    width:100%;
+    margin-top:18px;
+    border:none;
+    border-radius:12px;
+    padding:16px;
+    background:white;
+    font-size:18px;
 }
 
 </style>
@@ -84,12 +115,60 @@ body{
 
 <div class="content">
 
-    <div class="title">
-        Conteúdo videos
+    <!-- Conteúdo 1 -->
+    <div class="video-card">
+
+        <img
+        class="thumb"
+        src="https://picsum.photos/800/400"
+        >
+
+        <div class="info">
+
+            <div class="title">
+                Conteúdo XPX 1
+            </div>
+
+            <div class="desc">
+                Descrição curta do conteúdo.
+            </div>
+
+            <button
+            class="watch-btn"
+            onclick="location.href='#'"
+            >
+                Assistir
+            </button>
+
+        </div>
     </div>
 
-    <div class="subtitle">
-        Conteúdo em breve
+    <!-- Conteúdo 2 -->
+    <div class="video-card">
+
+        <img
+        class="thumb"
+        src="https://picsum.photos/801/400"
+        >
+
+        <div class="info">
+
+            <div class="title">
+                Conteúdo XPX 2
+            </div>
+
+            <div class="desc">
+                Outro conteúdo de exemplo.
+            </div>
+
+            <button
+            class="watch-btn"
+            onclick="location.href='#'"
+            >
+                Assistir
+            </button>
+
+        </div>
     </div>
 
 </div>
